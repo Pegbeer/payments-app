@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payments_app/themes/light_theme.dart';
-import 'package:provider/provider.dart';
+import 'package:payments_app/screens/screens.dart';
 import 'constants.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: LightTheme.theme,
       debugShowCheckedModeBanner: false,
       initialRoute: 'home',
-      routes: {},
+      routes: {'home': (_) => const HomeScreen()},
     );
   }
 }
